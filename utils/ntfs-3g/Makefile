@@ -62,11 +62,6 @@ define Package/ntfs-3g/config
 config PACKAGE_NTFS-3G_USE_LIBFUSE
 	bool "use external FUSE library, selects package libfuse"
 	depends on PACKAGE_ntfs-3g
-	---help---
-	Ntfs-3g by default uses a minimalized lite version of FUSE.
-	If libfuse is part of your filesystem anyway (because of sshfs, owfs
-	etc.) it makes sense to activate this option and save some kilobytes
-	of space.
 
 config PACKAGE_NTFS-3G_HAS_PROBE
 	bool "install the ntfs-3g.probe utility"
